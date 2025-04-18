@@ -1,125 +1,81 @@
-Berikut adalah contoh isi `README.md` yang profesional dan lengkap untuk tugas assessment frontend login & visualisasi data:
+Berikut versi `README.md` yang sudah diperbaiki agar **bagian atas dan bawah menyatu**, **tidak ada scroll box**, dan tampil lebih **natural dibaca langsung tanpa code block**:
 
 ---
 
-```md
-# Frontend Assessment - Login & Data Visualization App
+# 🧪 Frontend Assessment – Login & Data Visualization App
 
-## ✨ Deskripsi Proyek
+## 📌 Deskripsi Proyek
 
 Proyek ini merupakan bagian dari **assessment frontend developer**, di mana saya diminta untuk mengimplementasikan:
 
-1. **Tampilan login** yang **responsive** menggunakan React.js/Next.js.
-2. **Integrasi dengan API** yang telah disediakan.
-3. **Visualisasi data JSON** menggunakan library chart.
+- Halaman login yang responsif menggunakan React.js/Next.js  
+- Integrasi dengan API yang telah disediakan  
+- Visualisasi data JSON menggunakan library chart interaktif  
 
-Aplikasi ini dibuat dengan pendekatan **komponen modular**, mengadopsi **best practice dalam manajemen state**, struktur folder yang rapi, serta UI/UX yang bersih dan intuitif.
+Aplikasi dibangun dengan pendekatan **komponen modular**, menggunakan **best practice dalam manajemen state**, struktur folder yang terorganisir, serta UI/UX yang bersih dan intuitif.
 
----
+## ⚙️ Teknologi yang Digunakan
 
-## 🚀 Teknologi yang Digunakan
+- **React.js** – Framework React untuk SSR & routing otomatis  
+- **Tailwind CSS** – Styling cepat, modern, dan responsif  
+- **Recharts** – Untuk visualisasi data  
+- **Axios** – Komunikasi HTTP ke API  
+- **Mobx** – Manajemen state global  
+- **TypeScript** – Penulisan kode yang lebih aman dan terstruktur  
 
-- **Next.js** – Framework React untuk SSR dan routing otomatis
-- **Tailwind CSS** – Untuk styling cepat dan responsif
-- **Chart.js / React-Chartjs-2** – Untuk visualisasi data JSON
-- **Axios** – Untuk komunikasi HTTP dengan API
-- **Zustand / Context API** – Untuk manajemen state
-- **TypeScript** – Untuk keamanan dan keterbacaan kode
-
----
-
-## 📱 Fitur Utama
+## ✨ Fitur Utama
 
 ### 🔐 Login Page
-- Responsive di semua ukuran layar
-- Validasi form (email & password)
-- Integrasi API login
-- Simpan token ke localStorage
 
-### 📊 Dashboard Visualisasi Data
-- Fetch data JSON dari API
-- Tampilkan data ke dalam chart (bar, line, atau pie)
-- Komponen chart reusable & modular
-- State management untuk menyimpan data dan auth status
+- Responsif di berbagai ukuran layar  
+- Validasi input email & password  
+- Autentikasi via API (POST `/login`)  
+- Token disimpan di `localStorage`  
 
----
+### 📊 Dashboard Visualisasi
 
-## 🧪 Cara Menjalankan
+- Menampilkan data dari API (GET `/data`)  
+- Visualisasi data dalam format bar, line, atau pie chart  
+- Komponen chart yang reusable & modular  
+- Manajemen state untuk data dan status autentikasi  
 
-1. **Clone repository:**
-   ```bash
-   git clone https://github.com/username/frontend-assessment.git
-   cd frontend-assessment
-   ```
+## ▶️ Cara Menjalankan Proyek
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   # atau
-   yarn install
-   ```
+1. Clone repository  
+   `git clone https://github.com/username/frontend-assessment.git`  
+   `cd frontend-assessment`
 
-3. **Jalankan aplikasi lokal:**
-   ```bash
-   npm run dev
-   # atau
-   yarn dev
-   ```
+2. Install dependencies  
+   `npm install` atau `yarn install`
 
-4. **Buka di browser:**
-   ```
-   http://localhost:3000
-   ```
+3. Jalankan aplikasi secara lokal  
+   `npm run dev` atau `yarn dev`
 
----
+4. Akses melalui browser  
+   `http://localhost:5173`
+## 🎯 Kriteria Penilaian
 
-## 📂 API Endpoint
+- ✅ Struktur kode bersih & modular  
+- ✅ Komponen reusable  
+- ✅ UI responsif dan ramah pengguna  
+- ✅ Visualisasi data yang jelas dan interaktif  
+- ✅ Penanganan autentikasi yang aman  
 
-**Base URL:** `https://api.example.com`
+## 🕒 Estimasi Waktu Pengerjaan
 
-| Endpoint     | Method | Deskripsi           |
-|--------------|--------|---------------------|
-| `/login`     | POST   | Login user          |
-| `/data`      | GET    | Ambil data untuk chart |
+Total waktu pengerjaan: ± 24 jam
 
----
+## 🌐 Deployment (Opsional)
 
-## 🎯 Penilaian & Tujuan
+Jika sudah dideploy, aplikasi dapat diakses di:  
+🔗 [https://frontend-assessment.vercel.app](https://frontend-assessment.vercel.app)
 
-- ✅ Kode bersih & modular
-- ✅ Penggunaan komponen reusable
-- ✅ UI responsive dan accessible
-- ✅ Visualisasi data yang informatif
-- ✅ Penanganan autentikasi dengan baik
+## 👨‍💻 Tentang Saya
+
+- **Nama:** [Nama Anda]  
+- **Email:** [email@example.com]  
+- **LinkedIn:** [linkedin.com/in/username](https://linkedin.com/in/username)
 
 ---
 
-## 🕒 Waktu Pengerjaan
-
-Total waktu pengerjaan: **1 x 24 jam**
-
----
-
-## 📎 Deployment (Opsional)
-
-Jika dideploy:
-> 🔗 [https://frontend-assessment.vercel.app](https://frontend-assessment.vercel.app)
-
----
-
-## 🧑‍💻 Author
-
-- Nama: **[Nama Anda]**
-- Email: [email@example.com]
-- LinkedIn: [linkedin.com/in/username](https://linkedin.com/in/username)
-
----
-
-## 📜 Lisensi
-
-MIT License © 2025
-```
-
----
-
-Kalau kamu mau aku bantu generate isi `README.md` ini langsung sesuai struktur project-mu (misalnya nama folder, framework, atau library spesifik yang kamu gunakan), tinggal kasih tahu aja.
+Kalau kamu ingin saya bantu masukkan screenshot tampilan login dan dashboard juga, tinggal kirim gambarnya aja ya. Mau versi Bahasa Inggris-nya juga sekalian?
