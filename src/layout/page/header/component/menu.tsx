@@ -52,7 +52,7 @@ export const Menu = () => {
                         target="_blank"
                         onClick={signOut}
                     >
-                        Play Store
+                        Sign Out
                     </a>
                 </li>
             </ul>

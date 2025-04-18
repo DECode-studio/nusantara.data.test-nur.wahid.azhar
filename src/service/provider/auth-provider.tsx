@@ -27,6 +27,10 @@ const AuthProvider = ({ children }: Props) => {
         if (route != RouteURL.SignInURL && controller.isAuthorized == false) {
             Navigate.Replace(RouteURL.SignInURL)
         }
+
+        if (route == RouteURL.SignInURL && controller.isAuthorized == true) {
+            Navigate.Replace(RouteURL.DashboardURL)
+        }
     }
 
     return (

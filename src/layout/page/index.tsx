@@ -12,7 +12,7 @@ const PageLayout = ({
     return (
         <div className="bg-white">
             <Header />
-            <div className="min-h-screen">
+            <div className="min-h-screen bg-white">
                 {children}
             </div>
             <Footer />
