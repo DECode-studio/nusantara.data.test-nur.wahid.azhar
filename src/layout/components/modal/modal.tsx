@@ -16,11 +16,11 @@ const ModalLayout = ({
         <>
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
                 <div className={`relative p-4 w-full ${width} max-h-full`}>
-                    <div className="relative bg-white rounded-3xl shadow-sm dark:bg-gray-700">
+                    <div className="relative bg-white rounded-3xl shadow-sm">
 
                         <button
                             type="button"
-                            className="absolute top-0 left-0 m-5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="absolute top-0 left-0 m-5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
                             onClick={onClose}
                         >
                             <Cancel01Icon className="w-5 h-5" />

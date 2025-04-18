@@ -70,7 +70,7 @@ class AuthAppController {
         }
     };
 
-    signOut = async (): Promise<boolean> => {
+    signOut = (): boolean => {
         localStorage.removeItem("session");
         this.isAuthorized = false;
 
