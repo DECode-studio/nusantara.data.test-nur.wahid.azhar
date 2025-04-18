@@ -1,54 +1,125 @@
-# React + TypeScript + Vite
+Berikut adalah contoh isi `README.md` yang profesional dan lengkap untuk tugas assessment frontend login & visualisasi data:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+```md
+# Frontend Assessment - Login & Data Visualization App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Deskripsi Proyek
 
-## Expanding the ESLint configuration
+Proyek ini merupakan bagian dari **assessment frontend developer**, di mana saya diminta untuk mengimplementasikan:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Tampilan login** yang **responsive** menggunakan React.js/Next.js.
+2. **Integrasi dengan API** yang telah disediakan.
+3. **Visualisasi data JSON** menggunakan library chart.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Aplikasi ini dibuat dengan pendekatan **komponen modular**, mengadopsi **best practice dalam manajemen state**, struktur folder yang rapi, serta UI/UX yang bersih dan intuitif.
+
+---
+
+## 🚀 Teknologi yang Digunakan
+
+- **Next.js** – Framework React untuk SSR dan routing otomatis
+- **Tailwind CSS** – Untuk styling cepat dan responsif
+- **Chart.js / React-Chartjs-2** – Untuk visualisasi data JSON
+- **Axios** – Untuk komunikasi HTTP dengan API
+- **Zustand / Context API** – Untuk manajemen state
+- **TypeScript** – Untuk keamanan dan keterbacaan kode
+
+---
+
+## 📱 Fitur Utama
+
+### 🔐 Login Page
+- Responsive di semua ukuran layar
+- Validasi form (email & password)
+- Integrasi API login
+- Simpan token ke localStorage
+
+### 📊 Dashboard Visualisasi Data
+- Fetch data JSON dari API
+- Tampilkan data ke dalam chart (bar, line, atau pie)
+- Komponen chart reusable & modular
+- State management untuk menyimpan data dan auth status
+
+---
+
+## 🧪 Cara Menjalankan
+
+1. **Clone repository:**
+   ```bash
+   git clone https://github.com/username/frontend-assessment.git
+   cd frontend-assessment
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # atau
+   yarn install
+   ```
+
+3. **Jalankan aplikasi lokal:**
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   ```
+
+4. **Buka di browser:**
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 📂 API Endpoint
+
+**Base URL:** `https://api.example.com`
+
+| Endpoint     | Method | Deskripsi           |
+|--------------|--------|---------------------|
+| `/login`     | POST   | Login user          |
+| `/data`      | GET    | Ambil data untuk chart |
+
+---
+
+## 🎯 Penilaian & Tujuan
+
+- ✅ Kode bersih & modular
+- ✅ Penggunaan komponen reusable
+- ✅ UI responsive dan accessible
+- ✅ Visualisasi data yang informatif
+- ✅ Penanganan autentikasi dengan baik
+
+---
+
+## 🕒 Waktu Pengerjaan
+
+Total waktu pengerjaan: **1 x 24 jam**
+
+---
+
+## 📎 Deployment (Opsional)
+
+Jika dideploy:
+> 🔗 [https://frontend-assessment.vercel.app](https://frontend-assessment.vercel.app)
+
+---
+
+## 🧑‍💻 Author
+
+- Nama: **[Nama Anda]**
+- Email: [email@example.com]
+- LinkedIn: [linkedin.com/in/username](https://linkedin.com/in/username)
+
+---
+
+## 📜 Lisensi
+
+MIT License © 2025
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Kalau kamu mau aku bantu generate isi `README.md` ini langsung sesuai struktur project-mu (misalnya nama folder, framework, atau library spesifik yang kamu gunakan), tinggal kasih tahu aja.
