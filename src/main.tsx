@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import DashboardPage from './page/dashboard'
 import SignInPage from './page/sign-in'
@@ -13,7 +13,7 @@ import './style/index.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <AuthProvider>
         <ModalMessageProvider>
           <Routes>
@@ -23,6 +23,6 @@ createRoot(document.getElementById('root')!).render(
         </ModalMessageProvider>
         <Toast />
       </AuthProvider>
-    </HashRouter>
+    </BrowserRouter>
   </StrictMode>,
 )
