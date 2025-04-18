@@ -13,7 +13,7 @@ class AuthDataController {
             let config: AxiosRequestConfig = {
                 method: 'post',
                 maxBodyLength: Infinity,
-                url: `http://103.31.39.176:1000/ndi/login `,
+                url: `https://cors-anywhere.herokuapp.com/http://103.31.39.176:1000/ndi/login`,
                 data: req,
             };
 
