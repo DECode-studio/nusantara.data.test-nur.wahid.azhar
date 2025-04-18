@@ -38,7 +38,7 @@ Aplikasi dibangun dengan pendekatan **komponen modular**, menggunakan **best pra
 ## ▶️ Cara Menjalankan Proyek
 
 1. Clone repository  
-   `git clone https://github.com/username/frontend-assessment.git`  
+   `git clone https://github.com/DECode-studio/nusantara.data.test-nur.wahid.azhar.git`
    `cd frontend-assessment`
 
 2. Install dependencies  
@@ -64,14 +64,13 @@ Total waktu pengerjaan: ± 24 jam
 ## 🌐 Deployment (Opsional)
 
 Jika sudah dideploy, aplikasi dapat diakses di:  
-🔗 [https://frontend-assessment.vercel.app](https://frontend-assessment.vercel.app)
+🔗 [https://nusantara-data-test-nur-wahid-azhar.vercel.app](https://nusantara-data-test-nur-wahid-azhar.vercel.app)
 
 ## 👨‍💻 Tentang Saya
 
-- **Nama:** [Nama Anda]  
-- **Email:** [email@example.com]  
-- **LinkedIn:** [linkedin.com/in/username](https://linkedin.com/in/username)
+- **Nama:** Nur Wahid Azhar  
+- **Email:** nur.wahid.azhar@gmail.com
+- **LinkedIn:** [Nur Wahid Azhar](https://www.linkedin.com/in/nur-wahid-azhar-675163a6/)
+- **Portofolio Web:** [Nur Wahid Azhar](https://porto-ku.excitech.id/user?id=nur.wahid.azhar)
 
 ---
-
-Kalau kamu ingin saya bantu masukkan screenshot tampilan login dan dashboard juga, tinggal kirim gambarnya aja ya. Mau versi Bahasa Inggris-nya juga sekalian?
