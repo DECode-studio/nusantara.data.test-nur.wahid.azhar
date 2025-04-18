@@ -1,7 +1,3 @@
-Berikut versi `README.md` yang sudah diperbaiki agar **bagian atas dan bawah menyatu**, **tidak ada scroll box**, dan tampil lebih **natural dibaca langsung tanpa code block**:
-
----
-
 # 🧪 Frontend Assessment – Login & Data Visualization App
 
 ## 📌 Deskripsi Proyek
