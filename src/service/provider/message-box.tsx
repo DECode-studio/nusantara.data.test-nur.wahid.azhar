@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 import { MessageType } from '../service/enum/meesage';
-import { MessageBox } from '../../components/message/message-box';
+import { MessageBox } from '../../layout/components/message/message-box';
 
 type ModalMessageContextProps = {
   showMessage: (message: string, type?: MessageType) => void;

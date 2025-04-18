@@ -1,8 +1,8 @@
 import { ReactNode, useEffect, useState } from "react"
 import AuthAppController from "../controller/service/auth"
 import Navigate from "../service/navigation/navigator"
-import { LoadDialog } from "../../components/load"
 import RouteURL from "../service/navigation/url"
+import { LoadDialog } from "../../layout/components/load"
 
 type Props = {
     children: ReactNode

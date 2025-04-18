@@ -1,12 +1,10 @@
-'use client'
-
 import { observer } from "mobx-react-lite";
 import FormPage from "./components/form";
 
 import GoogleSignIn from "./components/google";
 import SignInPageController from "../../service/controller/page/sign-in";
-import { LoadDialog } from "../../components/load";
 import { useEffect } from "react";
+import { LoadDialog } from "../../layout/components/load";
 
 const controller = new SignInPageController()
 

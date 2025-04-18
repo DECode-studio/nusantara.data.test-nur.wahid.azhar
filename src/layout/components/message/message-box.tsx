@@ -1,5 +1,5 @@
 import { Alert02Icon, CheckmarkCircle03Icon } from "hugeicons-react"
-import { MessageType } from "../../service/service/enum/meesage"
+import { MessageType } from "../../../service/service/enum/meesage"
 import ModalLayout from "../modal/modal"
 
 type Props = {

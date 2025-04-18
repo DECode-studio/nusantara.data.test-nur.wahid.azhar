@@ -1,6 +1,6 @@
 import { GoogleIcon } from "hugeicons-react"
 import SignInPageController from "../../../service/controller/page/sign-in"
-import Button from "../../../components/button/button"
+import Button from "../../../layout/components/button/button"
 
 type Props = {
     controller: SignInPageController

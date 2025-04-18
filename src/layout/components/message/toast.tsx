@@ -1,4 +1,3 @@
-'use client'
 import { Bounce, ToastContainer } from "react-toastify"
 
 const Toast = () => {

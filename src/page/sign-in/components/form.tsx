@@ -1,12 +1,10 @@
-'use client'
-
 import { observer } from 'mobx-react-lite';
 import { Login03Icon } from "hugeicons-react"
 
 import SignInPageController from '../../../service/controller/page/sign-in';
-import Button from '../../../components/button/button';
-import { TitleTextField } from '../../../components/text-field/text-field';
-import { TitlePasswordField } from '../../../components/text-field/password-field';
+import { TitleTextField } from '../../../layout/components/text-field/text-field';
+import { TitlePasswordField } from '../../../layout/components/text-field/password-field';
+import Button from '../../../layout/components/button/button';
 
 type ComponentsProps = {
     controller: SignInPageController

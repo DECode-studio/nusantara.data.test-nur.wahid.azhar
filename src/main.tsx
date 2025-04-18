@@ -7,7 +7,7 @@ import SignInPage from './page/sign-in'
 
 import AuthProvider from './service/provider/auth-provider'
 import { ModalMessageProvider } from './service/provider/message-box'
-import Toast from './components/message/toast'
+import Toast from './layout/components/message/toast'
 
 import './style/index.css'
 
