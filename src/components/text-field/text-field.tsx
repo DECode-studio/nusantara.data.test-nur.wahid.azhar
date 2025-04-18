@@ -21,7 +21,7 @@ export const TitleTextField = ({
 }: Props) => {
     return (
         <div className="flex flex-col space-y-2 w-full">
-            <span className="text-neutral-800 dark:text-neutral-200 text-sm font-semibold">
+            <span className="text-gray-500 text-sm font-semibold">
                 {title}
             </span>
             <TextField
@@ -52,7 +52,7 @@ export const TextField = ({
             <div className="group relative rounded-full overflow-hidden">
                 <div className="relative flex items-center justify-between">
                     <input
-                        className="flex-1 h-[50px] px-[20px] bg-transparent placeholder-gray-500 placeholder-opacity-30 focus:outline-none focus:text-white "
+                        className="flex-1 h-[50px] px-[20px] bg-transparent placeholder-gray-500 placeholder-opacity-30 focus:outline-none focus:text-black rounded-full border"
                         type={type}
                         readOnly={readonly}
                         placeholder={title}

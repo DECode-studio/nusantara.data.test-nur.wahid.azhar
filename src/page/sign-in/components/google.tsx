@@ -1,6 +1,6 @@
-import SignInPageController from "@/app-controller/page/signin-page-controller"
-import Button from "@/app-layout/components/button/button"
 import { GoogleIcon } from "hugeicons-react"
+import SignInPageController from "../../../service/controller/page/sign-in"
+import Button from "../../../components/button/button"
 
 type Props = {
     controller: SignInPageController
@@ -12,13 +12,11 @@ const GoogleSignIn = ({
     return (
         <div className="flex flex-col w-full my-2 text-center">
             <Button
-                onClick={() => controller.googleSignIn()}
-                type='button'
-                className={`w-full ttnc-ButtonPrimary disabled:bg-opacity-70 bg-cyan-700 hover:bg-cyan-800 text-neutral-50`}
+                onClick={() => controller.actionMethod('sign-google')}
                 icon={<GoogleIcon />}
-            >
-                Google Sign In
-            </Button>
+                text="Google Sign In"
+                className="text-white bg-cyan-700"
+            />
 
             <div className="flex flex-row items-center justify-center">
                 <hr className="flex-grow" />

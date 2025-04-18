@@ -51,7 +51,8 @@ class AuthAppController {
 
         if (res?.code == 200) {
             this.isAuthorized = true;
-            localStorage.setItem("session", encryptData(JSON.stringify(res?.dataProfile ?? {})));
+            localStorage.setItem("session",
+                encryptData(JSON.stringify(res?.dataProfile ?? {})));
 
             dialogueMessage(
                 res?.message ?? '',

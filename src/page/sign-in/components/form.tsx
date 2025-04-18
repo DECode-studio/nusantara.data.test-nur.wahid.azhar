@@ -1,98 +1,44 @@
 'use client'
 
 import { observer } from 'mobx-react-lite';
+import { Login03Icon } from "hugeicons-react"
 
-import Input from "@/shared/Input"
-import Button from "@/app-layout/components/button/button"
-
-import { BitcoinEyeIcon, Login03Icon, ViewOffIcon } from "hugeicons-react"
-import SignInPageController from '@/app-controller/page/signin-page-controller';
-import { useState } from 'react';
-import Navigate from '@/app-service/route/navigator';
+import SignInPageController from '../../../service/controller/page/sign-in';
+import Button from '../../../components/button/button';
+import { TitleTextField } from '../../../components/text-field/text-field';
+import { TitlePasswordField } from '../../../components/text-field/password-field';
 
 type ComponentsProps = {
     controller: SignInPageController
 }
 
 const FormPage = observer(({ controller }: ComponentsProps) => {
-    const [showPassword, setShowPassword] = useState(false);
-
-    const handleNavigate = async (route: any) => {
-        Navigate.Replace(route)
-    };
 
     return (
-        <form className="grid w-full gap-6" action="#" method="post">
+        <div className="flex flex-col space-y-6 w-full">
 
-            <label className="block">
-                <span className="text-neutral-800 dark:text-neutral-200">
-                    Email address
-                </span>
-                <Input
-                    type="email"
-                    placeholder="example@example.com"
-                    className="mt-1"
-                    onInput={
-                        (e: React.ChangeEvent<HTMLInputElement>) => controller.setData(
-                            'email',
-                            e.target.value,
-                        )
-                    }
-                    onKeyDown={(e) => {
-                        if (e.key === 'Enter') {
-                            controller.validateData(handleNavigate);
-                        }
-                    }}
-                />
-            </label>
+            <TitleTextField
+                title='Email'
+                value={controller.txtEmail}
+                onChange={(e) => controller.actionMethod('email', e)}
+                onSubmit={() => controller.validateData()}
+            />
 
-            <label className="block">
-                <span className="flex justify-between items-center text-neutral-800 dark:text-neutral-200">
-                    Password
-                </span>
-                <div className="relative">
-                    <Input
-                        type={showPassword ? "text" : "password"}
-                        className="mt-1 pr-10"
-                        onInput={(e: React.ChangeEvent<HTMLInputElement>) =>
-                            controller.setData("password", e.target.value)
-                        }
-                        onKeyDown={(e) => {
-                            if (e.key === 'Enter') {
-                                controller.validateData(handleNavigate);
-                            }
-                        }}
-                    />
-                    <button
-                        type="button"
-                        className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 p-2"
-                        onClick={() => setShowPassword(!showPassword)}
-                    >
-                        {showPassword ? <ViewOffIcon className='w-5 h-5' /> : <BitcoinEyeIcon className='w-5 h-5' />}
-                    </button>
-                </div>
-            </label>
-
-            <div className="flex items-end justify-end">
-                <button
-                    type="button"
-                    className="text-sm underline font-medium text-right"
-                    onClick={() => controller.setData('forgot-password')}
-                >
-                    Forgot password?
-                </button>
-            </div>
+            <TitlePasswordField
+                title='Password'
+                value={controller.txtPassword}
+                onChange={(e) => controller.actionMethod('password', e)}
+                onSubmit={() => controller.validateData()}
+            />
 
             <Button
-                onClick={() => controller.validateData(handleNavigate)}
-                type='button'
-                className={`w-full ttnc-ButtonPrimary disabled:bg-opacity-70 bg-cyan-700 hover:bg-cyan-800 text-neutral-50`}
+                onClick={() => controller.validateData()}
                 icon={<Login03Icon />}
-            >
-                Sign In
-            </Button>
+                text={'Sign In'}
+                className="text-white bg-cyan-700"
+            />
 
-        </form>
+        </div>
     )
 })
 

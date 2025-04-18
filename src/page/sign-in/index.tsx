@@ -2,7 +2,6 @@
 
 import { observer } from "mobx-react-lite";
 import FormPage from "./components/form";
-import RegisterSection from "./components/register";
 
 import GoogleSignIn from "./components/google";
 import SignInPageController from "../../service/controller/page/sign-in";
@@ -22,15 +21,12 @@ const SignInPage = observer(() => {
         <>
             <div className="flex flex-col lg:flex-row h-screen">
                 <div className="lg:w-1/2 flex flex-col justify-center items-center p-8 lg:px-28 bg-white">
-                    <h1 className="text-start text-4xl font-bold mb-4 text-brown-700">
+                    <h1 className="text-start text-4xl font-bold mb-4 text-black">
                         Sign In
                     </h1>
 
                     <GoogleSignIn controller={controller} />
-
                     <FormPage controller={controller} />
-
-                    <RegisterSection />
 
                 </div>
 
