@@ -18,9 +18,10 @@ const FormPage = observer(({ controller }: ComponentsProps) => {
         <div className="flex flex-col space-y-6 w-full">
 
             <TitleTextField
-                title='Email'
-                value={controller.txtEmail}
-                onChange={(e) => controller.actionMethod('email', e)}
+                title='User Name'
+                type='text'
+                value={controller.txtUserName}
+                onChange={(e) => controller.actionMethod('user-name', e)}
                 onSubmit={() => controller.validateData()}
             />
 

@@ -8,7 +8,7 @@ import RouteURL from "../../service/navigation/url";
 class SignInPageController {
     authApp = new AuthAppController()
 
-    txtEmail: string = ''
+    txtUserName: string = ''
     txtPassword: string = ''
 
     loadData: boolean = true
@@ -20,7 +20,7 @@ class SignInPageController {
     getData = () => {
         this.loadData = true
 
-        this.txtEmail = ''
+        this.txtUserName = ''
         this.txtPassword = ''
 
         this.loadData = false
@@ -34,8 +34,8 @@ class SignInPageController {
             warningToast('Google sign in is not available')
         }
 
-        if (mode == 'email') {
-            this.txtEmail = data
+        if (mode == 'user-name') {
+            this.txtUserName = data
         }
 
         if (mode == 'password') {
@@ -44,10 +44,10 @@ class SignInPageController {
     }
 
     validateData = () => {
-        if (this.txtEmail == '' && this.txtPassword == '') {
-            warningToast('Email and Password is still empty!')
-        } else if (this.txtEmail == '') {
-            warningToast('Email is still empty!')
+        if (this.txtUserName == '' && this.txtPassword == '') {
+            warningToast('User Name and Password is still empty!')
+        } else if (this.txtUserName == '') {
+            warningToast('User Name is still empty!')
         } else if (this.txtPassword == '') {
             warningToast('Password is still empty!')
         } else {
@@ -59,8 +59,10 @@ class SignInPageController {
         this.loadData = true
 
         const req: SignInRequest = {
-            email: this.txtEmail,
-            password: this.txtPassword
+            username: this.txtUserName,
+            password: this.txtPassword,
+            id_daerah: 212,
+            tahun: 2025
         }
 
         const res = await this.authApp.signIn(req)

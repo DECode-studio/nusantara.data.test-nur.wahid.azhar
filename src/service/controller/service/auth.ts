@@ -1,14 +1,12 @@
 import { makeAutoObservable } from "mobx";
 import { decryptData, encryptData } from "../../service/encryption";
-import { UserModel } from "../../model/response/user";
 import { SignInRequest } from "../../model/request/sign-in";
 import AuthDataController from "../data/auth";
-import { dialogueMessage } from "../../service/message/dialogue";
-import { MessageType } from "../../service/enum/meesage";
+import { dangerToast, successToast } from "../../service/message/toast";
+import { Session } from "../../model/response/session";
 
 class AuthAppController {
     authData = new AuthDataController()
-
     isAuthorized: boolean = false;
 
     constructor() {
@@ -30,8 +28,8 @@ class AuthAppController {
         }
     };
 
-    getSession = (): UserModel => {
-        let session: UserModel = {}
+    getSession = (): Session => {
+        let session: Session = {}
 
         try {
             const data: string = decryptData(localStorage.getItem("session") ?? '');
@@ -49,22 +47,24 @@ class AuthAppController {
     ): Promise<boolean> => {
         const res = await this.authData.signIn(req)
 
-        if (res?.code == 200) {
+        if (res?.status == true) {
             this.isAuthorized = true;
-            localStorage.setItem("session",
-                encryptData(JSON.stringify(res?.dataProfile ?? {})));
 
-            dialogueMessage(
-                res?.message ?? '',
-                MessageType.Success
-            )
+            const session: Session = {
+                access_token: res.access_token,
+                refresh_token: res.refresh_token,
+                issued_at: res.issued_at,
+                expired_at: res.expired_at
+            }
+
+            localStorage.setItem("session",
+                encryptData(JSON.stringify(session ?? {})));
+
+            successToast(res?.message ?? '')
 
             return true
         } else {
-            dialogueMessage(
-                res?.message ?? '',
-                MessageType.Danger
-            )
+            dangerToast(res?.message ?? '')
 
             return false
         }

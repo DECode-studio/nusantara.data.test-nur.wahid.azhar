@@ -52,7 +52,7 @@ export const TextField = ({
             <div className="group relative rounded-full overflow-hidden">
                 <div className="relative flex items-center justify-between">
                     <input
-                        className="flex-1 h-[50px] px-[20px] bg-transparent placeholder-gray-500 placeholder-opacity-30 focus:outline-none focus:text-black rounded-full border"
+                        className="flex-1 h-[50px] px-[20px] bg-transparent placeholder-gray-500 placeholder-opacity-30 focus:outline-none text-black rounded-full border border-gray-400 focus:border-black"
                         type={type}
                         readOnly={readonly}
                         placeholder={title}

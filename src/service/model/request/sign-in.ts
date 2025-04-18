@@ -1,4 +1,6 @@
 export type SignInRequest = {
-    email:string
+    username:string
     password: string
+    id_daerah: number
+    tahun: number
 }

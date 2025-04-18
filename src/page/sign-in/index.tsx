@@ -19,7 +19,7 @@ const SignInPage = observer(() => {
 
     return (
         <>
-            <div className="flex flex-col lg:flex-row h-screen">
+            <div className="flex flex-col lg:flex-row h-screen bg-white">
                 <div className="lg:w-1/2 flex flex-col justify-center items-center p-8 lg:px-28 bg-white">
                     <h1 className="text-start text-4xl font-bold mb-4 text-black">
                         Sign In
